@@ -1,14 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter, Route } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import RouterPractics from './RouterPractics';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <BrowserRouter> {/* BrowserRouter 아래에 있는 애들은 url주소 설정이 가능함. */}
     <App />
-  </React.StrictMode>
+    {/* <RouterPractics /> */}
+  </BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function
